@@ -38,4 +38,3 @@
         $contador++;
     }
 ?>
->>>>>>>> 4c353f55cbb68f273e94609d0017c6e6aba6b1cf:aula6
