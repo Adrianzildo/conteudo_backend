@@ -1,17 +1,9 @@
 <?php
   require_once "consultar_por_id.php";
-
+  require_once "../template/cabecalho.php";
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    
+    <div class="container">
     <h1>Cadastro de noticia</h1>
     <hr>
 
@@ -22,23 +14,23 @@
      
         <input type="hidden" name="idnoticia" value="<?php echo $noticia->idnoticia ?? "" ;?>"><br>
         
-        <label>Titulo</label><br>
-        <input type="text" name="titulo" value="<?php echo $noticia->titulo ?? "" ;?>"><br>
+        <label class="form-laber">Titulo</label><br>
+        <input class="form-control" type="type" name="titulo" value="<?php echo $noticia->titulo ?? "" ;?>"><br>
 
-        <label>Materia</label><br>
-        <input type="text" name="materia" value="<?php echo $noticia->materia ?? "" ;?>"><br>
+        <label class="form-laber">Materia</label><br>
+        <textarea class="form-control"  name="materia"><?php echo $noticia->materia ?? "" ;?></textarea><br>
 
-        <label>Categoria</label><br>
-        <input type="text" name="categoria" value="<?php echo $noticia->categoria ?? "" ;?>"><br>
+        <labe class="form-laber">Categoria</label><br>
+        <input class="form-control" type="type" name="categoria" value="<?php echo $noticia->categoria ?? "" ;?>"><br>
 
-        <label>Foto</label><br>
-        <input type="file" name="foto"><br>
+        <labe class="form-laber">Foto</label><br>
+        <input class="form-control" type="file" name="foto"><br>
 
-        <button type="submit">Inserir</button>
+        <button type="submit" class="btn btn-dark">Inserir</button>
         
     </form>
+</div>
 
 
     
-</body>
-</html>
+<?php require_once "../template/rodape.php"; ?>
