@@ -17,8 +17,8 @@
 
    //pega a primeira linha de resultado da consulta
    $categorias = [];
-   while ($noticia = $resultados -> fetch_object()){
-         $categorias[] = $noticia;
+   while ($categoria = $resultados -> fetch_object()){
+         $categorias[] = $categoria;
 
    }
 
