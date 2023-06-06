@@ -1,6 +1,8 @@
-<?php require "consultar_todos.php";
+<?php 
+      require_once "../login/controlar_acesso.php";
+      require_once "consultar_todos.php";
       require_once "../template/cabecalho.php";
-      require_once "../template/menu restrito.php";
+      require_once "../template/menu_restrito.php";
 
   ?>
    
