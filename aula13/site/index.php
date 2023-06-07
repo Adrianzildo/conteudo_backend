@@ -1,3 +1,4 @@
+
 <?php
     include "../noticia/consultar_todos.php";
     include_once "../template/cabecalho.php";
