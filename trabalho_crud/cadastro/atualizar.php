@@ -3,6 +3,7 @@
    //importa o arquivo de conexão
    require_once "banco.php";
    
+   $id = $_POST['idevento'];
    $nome = $_POST['nome'];
    $data = $_POST['data'];
    $local = $_POST['local'];
@@ -10,13 +11,13 @@
   
 
    //cria uma variável com um comando SQL
-   $SQL = "INSERT INTO `evento` (`nome`, `data`, `local`, `descricao` ) VALUES (?, ?, ?, ?);";
+   $SQL = "UPDATE `evento` SET `nome`=?, `data`=?, `local`=?, `descricao`=? WHERE  `idprimario`=?;";
  
    //prepara o comando para ser executado no mysql
    $comando = $banco->prepare($SQL);
 
    //faz a vinculação dos parâmetros ?, ?, ?
-   $comando->bind_param("ssss", $nome, $data, $local, $descricao);
+   $comando->bind_param("ssssi", $nome, $data, $local, $descricao,   $id );
 
   $comando->execute();
 

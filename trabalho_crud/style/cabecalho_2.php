@@ -10,7 +10,7 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link" href="formulario.php">Novo Cadastro</a>
-        <a class="nav-link" href="lista_usuario.php">Lista de eventos</a>
+        <a class="nav-link" href="lista_eventos.php">Lista de eventos</a>
       </div>
     </div>
   </div>
