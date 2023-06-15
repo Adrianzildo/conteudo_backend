@@ -1,6 +1,10 @@
 </head>
   <body>
     <div class="barra"> 
+      
+    
+
+
   <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.php">Página Inicial</a>
@@ -16,8 +20,6 @@
   </div>
 </div>
 </nav>
-
-
     <div clas="container">
         <div class="row">
             <div class="col mt-3">

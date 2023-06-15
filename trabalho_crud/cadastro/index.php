@@ -14,8 +14,14 @@
 
     <?php   
     require_once "../style/cabecalho_2.php";
-    include_once "../style/rodape.php";
     ?>
-
+    
+    <img src="img/evets.png" width=  100%; height =100% alt="Descrição da imagem">
   
 </html>
+
+<?php 
+    include_once "../style/rodape.php";
+    
+
+?>
